@@ -1,0 +1,166 @@
+{% extends "layout.html" %}
+{% block content %}
+{% load static %}
+<div class="index">
+	<!-- image-slider -->
+	<div class="slider-display-container">
+		<div class="image-slider-container">
+			<div class="image-slider fade">
+				<img src="{% static 'photo/kapada1.jpg' %}" alt="">
+				<div class="caption">Hello</div>
+			</div>
+			<div class="image-slider fade">
+				<img src="{% static 'photo/kapada.jpg' %}" alt="">
+				<div class="caption">Beautiful</div>
+			</div>
+			<div class="image-slider fade">
+				<img src="{% static 'photo/kapada2.jpg' %}" alt="">
+				<div class="caption">Hi</div>
+			</div>
+			<a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+		<div style="text-align: center;">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+	</div>
+	<!-- side-menu -->
+	<div class="side-menu">
+		<a href="#">About</a>
+		<a href="#">Services</a>
+		<a href="#">Clients</a>
+		<a href="#">Contact</a>
+	</div>
+	<!--search bar-->
+	<div class="search-container">
+		<div class="searchbox">
+			<input type="text" placeholder="Product" value="" name="search" autocomplete="">
+		</div>	
+		<div class="searchbtn">
+			<button>search</button>
+		</div>
+	</div>
+	<!-- popular and latest content -->
+	<div class="popular-display">
+		<p>Popular</p>
+		<div class="popular-flex-display"> 
+			<div class="dress-content">
+				<div id="dress-image">
+					<img src="{% static 'photo/'%}" alt="">
+				</div>
+				<div id="description"></div>
+				<div id="cart">
+					<button>Add Cart</button>
+				</div>
+			</div>
+			<div class="dress-content">
+				<div id="dress-image">
+					<img src="{% static 'photo/'%}" alt="">
+				</div>
+				<div id="description"></div>
+				<div id="cart">
+					<button>Add Cart</button>
+				</div>
+			</div>
+			<div class="dress-content">
+				<div id="dress-image">
+					<img src="{% static 'photo/'%}" alt="">
+				</div>
+				<div id="description"></div>
+				<div id="cart">
+					<button>Add Cart</button>
+				</div>
+			</div>
+			<div class="dress-content">
+				<div id="dress-image">
+					<img src="{% static 'photo/'%}" alt="">
+				</div>
+				<div id="description"></div>
+				<div id="cart">
+					<button>Add Cart</button>
+				</div>
+			</div>
+			<div class="dress-content">
+				<div id="dress-image">
+					<img src="{% static 'photo/'%}" alt="">
+				</div>
+				<div id="description"></div>
+				<div id="cart">
+					<button>Add Cart</button>
+				</div>
+			</div>
+			<div class="dress-content">
+				<div id="dress-image">
+					<img src="{% static 'photo/'%}" alt="">
+				</div>
+				<div id="description"></div>
+				<div id="cart">
+					<button>Add Cart</button>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div class="latest-display">
+		<p>Latest In</p>
+		<div class="latest-flex-display"> 
+			<div class="dress-content">
+				<div id="dress-image">
+					<img src="{% static 'photo/'%}" alt="">
+				</div>
+				<div id="description"></div>
+				<div id="cart">
+					<button>Add Cart</button>
+				</div>
+			</div>
+			<div class="dress-content">
+				<div id="dress-image">
+					<img src="{% static 'photo/'%}" alt="">
+				</div>
+				<div id="description"></div>
+				<div id="cart">
+					<button>Add Cart</button>
+				</div>
+			</div>
+			<div class="dress-content">
+				<div id="dress-image">
+					<img src="{% static 'photo/'%}" alt="">
+				</div>
+				<div id="description"></div>
+				<div id="cart">
+					<button>Add Cart</button>
+				</div>
+			</div>
+			<div class="dress-content">
+				<div id="dress-image">
+					<img src="{% static 'photo/'%}" alt="">
+				</div>
+				<div id="description"></div>
+				<div id="cart">
+					<button>Add Cart</button>
+				</div>
+			</div>
+			<div class="dress-content">
+				<div id="dress-image">
+					<img src="{% static 'photo/'%}" alt="">
+				</div>
+				<div id="description"></div>
+				<div id="cart">
+					<button>Add Cart</button>
+				</div>
+			</div>
+			<div class="dress-content">
+				<div id="dress-image">
+					<img src="{% static 'photo/'%}" alt="">
+				</div>
+				<div id="description"></div>
+				<div id="cart">
+					<button>Add Cart</button>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>
+{% endblock %}

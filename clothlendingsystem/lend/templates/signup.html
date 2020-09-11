@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block content %}
+{% load static %}
+	<div class="Sign">
+		<div class="containers">
+			<div class="form-container sign-in-container">
+				<form action="#">
+					<h1>Sign in</h1>
+					<div class="social-container">
+						<a href="#" class="fa fa-facebook"></a>
+						<a href="#" class="fa fa-twitter"></a>
+						<a href="#" class="fa fa-google"></a>
+						<a href="#" class="fa fa-instagram"></a>
+					</div>
+					<span>or use your account</span>
+					<input type="email" placeholder="Email" />
+					<input type="password" placeholder="Password" />
+					<a href="#">Forgot your password?</a>
+					<button>Sign In</button>
+				</form>
+			</div>
+			<div class="welcome_container">
+					<div class="overlay-panel">
+						<h1>Welcome!</h1>
+						<p>To get connected with us please login with your personal information</p>
+						<a href="/register"><button id="Signup">Sign Up</button></a>
+					</div>
+			</div>
+	</div>
+</div>
+{% endblock %}

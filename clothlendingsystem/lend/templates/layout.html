@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+	{% load static %}
+	<title>Lend||Cloth</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/layout.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/signup.css' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div id="top">
+		<a href="#" class="fa fa-instagram"></a>
+		<a href="#" class="fa fa-google"></a>
+		<a href="#" class="fa fa-twitter"></a>
+		<a href="#" class="fa fa-facebook"></a>
+		<label>follow us:</label>	
+	</div>
+	<header class="navbar" id="resnavbar" >
+		<a href="/" class="current">Home</a>
+		<a href="/dress">Dress</a>
+		<a href="/signup">Login</a>
+		<div class="dropdown">
+			<button class="servicebtn">
+					Service
+					<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdowncontent">
+				<a href="#">Seller</a>
+				<a href="#">Buyer</a>
+			</div>
+		</div>
+		<a href="javascript:void(0);" class="icon" onclick="responsiveNav()">&#9776;</a>
+	</header>
+	{% block content %}
+	{% endblock %}
+	
+	<footer>
+		<div class="footer-main">
+			<ul>
+				<li><a>Home</a></li>
+				<li><a>Categories</a></li>
+				<li><a>Customer Care</a></li>
+				<li><a>About</a></li>
+				<li><a>help</a></li>
+			</ul>
+		</div>
+		<hr>
+		<div class="footer-copyright">© 2020 Copyright  |&nbsp;
+			<a href="#">  Kapadabazzar.com</a>
+		</div>
+	</footer>
+	<script src="{% static 'JavaScript/nav.js' %}"></script>
+	<script src="{% static 'JavaScript/StickyNav.js' %}"></script>
+	<script src="{% static 'JavaScript/slider.js' %}"></script>
+</body>
+</html>

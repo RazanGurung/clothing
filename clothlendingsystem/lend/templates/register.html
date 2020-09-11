@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+{% load static %}
+	<div class="Sign">
+		<div class="containers">
+			<div class="Signupform">
+				<form>
+					<label id="name">Full Name</label>
+					<label id="email">Email</label><br>
+					<input type="text" name="name" placeholder="Enter your name">
+					<input type="email" name="email" placeholder="Enter your email"><br>
+					<label id="phone">Phone</label>
+					<label id="code">Verification Code</label><br>
+					<input type="text" name="number" placeholder="Enter your phone">
+					<input type="text" name="code" placeholder="Enter your code"><br>
+					<label id="password">Password</label><br>
+					<input type="password" name="password" placeholder="Enter the password">
+					<button id="Signupbtn">Sign Up</button><br>
+					<label id="dob">Birthday</label>
+					<label id="Gender">Gender</label><br>
+					<input type="date" name="dob" placeholder="Enter date of birth">
+					<select>
+						<option>Male</option>
+						<option>Female</option>
+					</select>
+				</form>
+			</div>
+		</div>
+	</div>
+{% endblock %}
